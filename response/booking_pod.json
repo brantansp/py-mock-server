@@ -1,0 +1,11 @@
+{
+  "bookingId": 123,
+  "podAvailable": true,
+  "s3": {
+       "location": "https://pando-staging.s3.ap-south-1.amazonaws.com/attachment/tillpoint-settings-print-templates-front-one.png",
+        "bucket": "pando-staging",
+         "key": "attachment/tillpoint-settings-print-templates-front-one.png"
+    },
+  "errorMessage":null,
+  "statusCode": 200
+}

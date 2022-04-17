@@ -1,0 +1,45 @@
+conName    = "mock-server"
+imageName  = "669650451927.dkr.ecr.ap-south-1.amazonaws.com/pandomockserver"   
+labelName = env.LABEL_NAME
+
+node(labelName) {
+
+	
+	//Clone the Repo
+    stage('Clone repository') {
+        /* Let's make sure we have the repository cloned to our workspace */
+           checkout scm
+    }
+    
+
+   //Compiling the build
+    stage('Build') {
+       customImage =  docker.build("$imageName:${env.BUILD_ID}")
+	}
+ 
+    //Stop and remove old Container
+ 	stage('Discard previous Deploy') {
+ 	   try {
+ 	   	sh "docker stop $conName"
+ 	   	sh "docker rm $conName"                         
+	  } catch (Exception e) {
+	  
+	  }
+ 	                            
+ 	}
+ 	
+ 	//Deploying new build
+ 	stage('Deploying New Build')  {
+ 	  sh "docker run --name mock-server --restart unless-stopped -d -p 5001:5001 -e TZ=Asia/Kolkata $imageName:${env.BUILD_ID}"
+ 	}
+ 	
+ 	//Pushing Image to ECS
+ 	stage("Pushing Image to ECS") {
+ 	   sh '$(aws ecr get-login --no-include-email --region ap-south-1)'
+       customImage.push("latest")                            
+    }
+
+
+
+
+}

@@ -1,0 +1,295 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1614843658.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"transporter_code",
+		"transporter_name",
+		"movement_type",
+		"indent_no",
+		"vehicle_type",
+		"vehicle_name",
+		"vehicle_description",
+		"pickups"
+	],
+	"properties": {
+		"transporter_code": {
+			"$id": "#root/transporter_code",
+			"title": "Transporter_code",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"transporter_name": {
+			"$id": "#root/transporter_name",
+			"title": "Transporter_name",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"movement_type": {
+			"$id": "#root/movement_type",
+			"title": "Movement_type",
+			"type": "integer",
+			"default": 0
+		},
+		"indent_no": {
+			"$id": "#root/indent_no",
+			"title": "Indent_no",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"vehicle_type": {
+			"$id": "#root/vehicle_type",
+			"title": "Vehicle_type",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"vehicle_name": {
+			"$id": "#root/vehicle_name",
+			"title": "Vehicle_name",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"vehicle_description": {
+			"$id": "#root/vehicle_description",
+			"title": "Vehicle_description",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"pickups": {
+			"$id": "#root/pickups",
+			"title": "Pickups",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/pickups/items",
+				"title": "Items",
+				"type": "object",
+				"required": [
+					"pickup_ref_id",
+					"truck_in_date",
+					"truck_in_time",
+					"truck_out_date",
+					"truck_out_time",
+					"consignees"
+				],
+				"properties": {
+					"pickup_ref_id": {
+						"$id": "#root/pickups/items/pickup_ref_id",
+						"title": "Pickup_ref_id",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"truck_in_date": {
+						"$id": "#root/pickups/items/truck_in_date",
+						"title": "Truck_in_date",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"truck_in_time": {
+						"$id": "#root/pickups/items/truck_in_time",
+						"title": "Truck_in_time",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"truck_out_date": {
+						"$id": "#root/pickups/items/truck_out_date",
+						"title": "Truck_out_date",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"truck_out_time": {
+						"$id": "#root/pickups/items/truck_out_time",
+						"title": "Truck_out_time",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"consignees": {
+						"$id": "#root/pickups/items/consignees",
+						"title": "Consignees",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/pickups/items/consignees/items",
+							"title": "Items",
+							"type": "object",
+							"required": [
+								"ship_to",
+								"sold_to",
+								"expected_date",
+								"reach_date",
+								"reach_time",
+								"release_date",
+								"release_time",
+								"lr_uploaded",
+								"lr_attachments",
+								"materials"
+							],
+							"properties": {
+								"ship_to": {
+									"$id": "#root/pickups/items/consignees/items/ship_to",
+									"title": "Ship_to",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"sold_to": {
+									"$id": "#root/pickups/items/consignees/items/sold_to",
+									"title": "Sold_to",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"expected_date": {
+									"$id": "#root/pickups/items/consignees/items/expected_date",
+									"title": "Expected_date",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"reach_date": {
+									"$id": "#root/pickups/items/consignees/items/reach_date",
+									"title": "Reach_date",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"reach_time": {
+									"$id": "#root/pickups/items/consignees/items/reach_time",
+									"title": "Reach_time",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"release_date": {
+									"$id": "#root/pickups/items/consignees/items/release_date",
+									"title": "Release_date",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"release_time": {
+									"$id": "#root/pickups/items/consignees/items/release_time",
+									"title": "Release_time",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"lr_uploaded": {
+									"$id": "#root/pickups/items/consignees/items/lr_uploaded",
+									"title": "Lr_uploaded",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"lr_attachments": {
+									"$id": "#root/pickups/items/consignees/items/lr_attachments",
+									"title": "Lr_attachments",
+									"type": "array",
+									"default": []
+								},
+								"materials": {
+									"$id": "#root/pickups/items/consignees/items/materials",
+									"title": "Materials",
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/pickups/items/consignees/items/materials/items",
+										"title": "Items",
+										"type": "object",
+										"required": [
+											"material_code",
+											"material_invoice_number",
+											"delivery_number",
+											"no_of_shortage",
+											"no_of_leakage",
+											"no_of_excess",
+											"no_of_damage",
+											"no_of_carton_damage",
+											"lr_number"
+										],
+										"properties": {
+											"material_code": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/material_code",
+												"title": "Material_code",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"material_invoice_number": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/material_invoice_number",
+												"title": "Material_invoice_number",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"delivery_number": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/delivery_number",
+												"title": "Delivery_number",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"no_of_shortage": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/no_of_shortage",
+												"title": "No_of_shortage",
+												"type": "integer",
+												"default": 0
+											},
+											"no_of_leakage": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/no_of_leakage",
+												"title": "No_of_leakage",
+												"type": "integer",
+												"default": 0
+											},
+											"no_of_excess": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/no_of_excess",
+												"title": "No_of_excess",
+												"type": "integer",
+												"default": 0
+											},
+											"no_of_damage": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/no_of_damage",
+												"title": "No_of_damage",
+												"type": "integer",
+												"default": 0
+											},
+											"no_of_carton_damage": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/no_of_carton_damage",
+												"title": "No_of_carton_damage",
+												"type": "integer",
+												"default": 0
+											},
+											"lr_number": {
+												"$id": "#root/pickups/items/consignees/items/materials/items/lr_number",
+												"title": "Lr_number",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											}
+										}
+									}
+
+								}
+							}
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "baseFreight": 26459.722222222223,
+        "clientId": "5e462d961ef610054c42ef0e",
+        "confidenceScore": 0.86,
+        "customer": "Orient Electric Ltd",
+        "damageFreeShipmentRating": 5.0,
+        "deliveryRating": 3.25,
+        "movementType": "Primary",
+        "placementRating": 3.86,
+        "totalIndentCount": 66,
+        "totalRating": 3.73,
+        "transporter": "Safe Speed Carriers Private Limited",
+        "transporterId": "5ec3fa1864d92301c50d3c22",
+        "wd": 0.4,
+        "wp": 0.5,
+        "ws": 0.1
+    }
+]

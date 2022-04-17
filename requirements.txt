@@ -1,0 +1,11 @@
+flask
+requests
+jsonschema
+pymongo
+psycopg2-binary
+psycopg2
+dnspython
+xmltodict
+fastapi
+uvicorn
+python-simplexml

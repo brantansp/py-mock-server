@@ -1,0 +1,672 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1622133207.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"transporter_code",
+		"invoice_number",
+		"invoice_total",
+		"invoice_date",
+		"invoice_approved_at",
+		"invoice_created_at",
+		"currency",
+		"indents"
+	],
+	"properties": {
+		"transporter_code": {
+			"$id": "#root/transporter_code",
+			"title": "Transporter_code",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"tr20210527125314"
+			],
+			"pattern": "^.*$"
+		},
+		"invoice_number": {
+			"$id": "#root/invoice_number",
+			"title": "Invoice_number",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"pg-1245"
+			],
+			"pattern": "^.*$"
+		},
+		"invoice_total": {
+			"$id": "#root/invoice_total",
+			"title": "Invoice_total",
+			"type": "integer",
+			"examples": [
+				10100
+			],
+			"default": 0
+		},
+		"invoice_date": {
+			"$id": "#root/invoice_date",
+			"title": "Invoice_date",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2021-05-27T10:05:01.117Z"
+			],
+			"pattern": "^.*$"
+		},
+		"invoice_approved_at": {
+			"$id": "#root/invoice_approved_at",
+			"title": "Invoice_approved_at",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2021-05-27T10:05:01.117Z"
+			],
+			"pattern": "^.*$"
+		},
+		"invoice_created_at": {
+			"$id": "#root/invoice_created_at",
+			"title": "Invoice_created_at",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2021-05-27T07:26:22.049Z"
+			],
+			"pattern": "^.*$"
+		},
+		"currency": {
+			"$id": "#root/currency",
+			"title": "Currency",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"INR"
+			],
+			"pattern": "^.*$"
+		},
+		"indents": {
+			"$id": "#root/indents",
+			"title": "Indents",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/indents/items",
+				"title": "Items",
+				"type": "object",
+				"required": [
+					"indent_id",
+					"movement_type",
+					"legal_entity"
+				],
+				"properties": {
+					"indent_id": {
+						"$id": "#root/indents/items/indent_id",
+						"title": "Indent_id",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"pg-R20210527125314-D-1"
+						],
+						"pattern": "^.*$"
+					},
+					"movement_type": {
+						"$id": "#root/indents/items/movement_type",
+						"title": "Movement_type",
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"legal_entity": {
+						"$id": "#root/indents/items/legal_entity",
+						"title": "Legal_entity",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/indents/items/legal_entity/items",
+							"title": "Items",
+							"type": "object",
+							"required": [
+								"legal_entity_code",
+								"materials"
+							],
+							"properties": {
+								"legal_entity_code": {
+									"$id": "#root/indents/items/legal_entity/items/legal_entity_code",
+									"title": "Legal_entity_code",
+									"type": "string",
+									"default": "",
+									"examples": [
+										"DV"
+									],
+									"pattern": "^.*$"
+								},
+								"materials": {
+									"$id": "#root/indents/items/legal_entity/items/materials",
+									"title": "Materials",
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/indents/items/legal_entity/items/materials/items",
+										"title": "Items",
+										"type": "object",
+										"required": [
+											"id",
+											"business_unit",
+											"order_no",
+											"code",
+											"destination_location_id",
+											"contribution",
+											"cost_center",
+											"detention_value",
+											"defect_value",
+											"invoice_value",
+											"name",
+											"payment_id",
+											"material_code",
+											"volume",
+											"volume_unit",
+											"weight",
+											"bifurcation_by",
+											"purchase_order",
+											"delivery_number",
+											"legal_entity",
+											"source_code",
+											"destination_code",
+											"quantity",
+											"quantity_unit",
+											"weight_unit",
+											"conversion_equivalent",
+											"oda_freight",
+											"fixed_charge",
+											"additional_point_charge",
+											"miscellaneous_charge",
+											"loading_charge",
+											"unloading_charge",
+											"lr_charge",
+											"sla_delay",
+											"transit_delay",
+											"penalty",
+											"shortage",
+											"damage",
+											"carton_damage",
+											"leakage",
+											"debit_adjustment",
+											"source_gate_code",
+											"destination_gate_code",
+											"base_freight_value",
+											"shipment_number",
+											"material_invoice_number",
+											"created_at",
+											"updated_at"
+										],
+										"properties": {
+											"id": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/id",
+												"title": "Id",
+												"type": "integer",
+												"examples": [
+													601606
+												],
+												"default": 0
+											},
+											"business_unit": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/business_unit",
+												"title": "Business_unit",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"10"
+												],
+												"pattern": "^.*$"
+											},
+											"order_no": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/order_no",
+												"title": "Order_no",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"pg-R20210527125314-D-1"
+												],
+												"pattern": "^.*$"
+											},
+											"code": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/code",
+												"title": "Code",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"394278"
+												],
+												"pattern": "^.*$"
+											},
+											"destination_location_id": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/destination_location_id",
+												"title": "Destination_location_id",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"60af48e81f22da0051fc9131"
+												],
+												"pattern": "^.*$"
+											},
+											"contribution": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/contribution",
+												"title": "Contribution",
+												"type": "integer",
+												"examples": [
+													10100
+												],
+												"default": 0
+											},
+											"cost_center": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/cost_center",
+												"title": "Cost_center",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"Expectation"
+												],
+												"pattern": "^.*$"
+											},
+											"detention_value": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/detention_value",
+												"title": "Detention_value",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"defect_value": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/defect_value",
+												"title": "Defect_value",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"invoice_value": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/invoice_value",
+												"title": "Invoice_value",
+												"type": "integer",
+												"examples": [
+													10100
+												],
+												"default": 0
+											},
+											"name": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/name",
+												"title": "Name",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"m20210527125314"
+												],
+												"pattern": "^.*$"
+											},
+											"payment_id": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/payment_id",
+												"title": "Payment_id",
+												"type": "integer",
+												"examples": [
+													231349
+												],
+												"default": 0
+											},
+											"material_code": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/material_code",
+												"title": "Material_code",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"mc20210527125314"
+												],
+												"pattern": "^.*$"
+											},
+											"volume": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/volume",
+												"title": "Volume",
+												"type": "integer",
+												"examples": [
+													1024
+												],
+												"default": 0
+											},
+											"volume_unit": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/volume_unit",
+												"title": "Volume_unit",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"cft"
+												],
+												"pattern": "^.*$"
+											},
+											"weight": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/weight",
+												"title": "Weight",
+												"type": "integer",
+												"examples": [
+													10000
+												],
+												"default": 0
+											},
+											"bifurcation_by": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/bifurcation_by",
+												"title": "Bifurcation_by",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"weight"
+												],
+												"pattern": "^.*$"
+											},
+											"purchase_order": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/purchase_order",
+												"title": "Purchase_order",
+												"type": [ "string", "null" ],
+												"default": "",
+												"examples": [
+													""
+												],
+												"pattern": "^.*$"
+											},
+											"delivery_number": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/delivery_number",
+												"title": "Delivery_number",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"d120210527125314"
+												],
+												"pattern": "^.*$"
+											},
+											"legal_entity": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/legal_entity",
+												"title": "Legal_entity",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"DV"
+												],
+												"pattern": "^.*$"
+											},
+											"source_code": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/source_code",
+												"title": "Source_code",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"R20210527125314"
+												],
+												"pattern": "^.*$"
+											},
+											"destination_code": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/destination_code",
+												"title": "Destination_code",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"cr120210527125314"
+												],
+												"pattern": "^.*$"
+											},
+											"quantity": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/quantity",
+												"title": "Quantity",
+												"type": "integer",
+												"examples": [
+													100
+												],
+												"default": 0
+											},
+											"quantity_unit": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/quantity_unit",
+												"title": "Quantity_unit",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"NOS"
+												],
+												"pattern": "^.*$"
+											},
+											"weight_unit": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/weight_unit",
+												"title": "Weight_unit",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"kg"
+												],
+												"pattern": "^.*$"
+											},
+											"conversion_equivalent": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/conversion_equivalent",
+												"title": "Conversion_equivalent",
+												"type": "integer",
+												"examples": [
+													100
+												],
+												"default": 0
+											},
+											"oda_freight": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/oda_freight",
+												"title": "Oda_freight",
+												"type": "integer",
+												"examples": [
+													10000
+												],
+												"default": 0
+											},
+											"fixed_charge": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/fixed_charge",
+												"title": "Fixed_charge",
+												"type": "integer",
+												"examples": [
+													100
+												],
+												"default": 0
+											},
+											"additional_point_charge": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/additional_point_charge",
+												"title": "Additional_point_charge",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"miscellaneous_charge": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/miscellaneous_charge",
+												"title": "Miscellaneous_charge",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"loading_charge": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/loading_charge",
+												"title": "Loading_charge",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"unloading_charge": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/unloading_charge",
+												"title": "Unloading_charge",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"lr_charge": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/lr_charge",
+												"title": "Lr_charge",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"sla_delay": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/sla_delay",
+												"title": "Sla_delay",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"transit_delay": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/transit_delay",
+												"title": "Transit_delay",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"penalty": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/penalty",
+												"title": "Penalty",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"shortage": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/shortage",
+												"title": "Shortage",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"damage": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/damage",
+												"title": "Damage",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"carton_damage": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/carton_damage",
+												"title": "Carton_damage",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"leakage": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/leakage",
+												"title": "Leakage",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"debit_adjustment": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/debit_adjustment",
+												"title": "Debit_adjustment",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"source_gate_code": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/source_gate_code",
+												"title": "Source_gate_code",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"RG20210527125314"
+												],
+												"pattern": "^.*$"
+											},
+											"destination_gate_code": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/destination_gate_code",
+												"title": "Destination_gate_code",
+												"type": [ "string", "null" ],
+												"default": "",
+												"examples": [
+													""
+												],
+												"pattern": "^.*$"
+											},
+											"base_freight_value": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/base_freight_value",
+												"title": "Base_freight_value",
+												"type": "integer",
+												"examples": [
+													0
+												],
+												"default": 0
+											},
+											"shipment_number": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/shipment_number",
+												"title": "Shipment_number",
+												"type": "string",
+												"default": "",
+												"examples": [
+													""
+												],
+												"pattern": "^.*$"
+											},
+											"material_invoice_number": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/material_invoice_number",
+												"title": "Material_invoice_number",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"INV120210527125314"
+												],
+												"pattern": "^.*$"
+											},
+											"created_at": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/created_at",
+												"title": "Created_at",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"2021-05-27T07:26:22.160Z"
+												],
+												"pattern": "^.*$"
+											},
+											"updated_at": {
+												"$id": "#root/indents/items/legal_entity/items/materials/items/updated_at",
+												"title": "Updated_at",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"2021-05-27T07:26:22.160Z"
+												],
+												"pattern": "^.*$"
+											}
+										}
+									}
+
+								}
+							}
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}

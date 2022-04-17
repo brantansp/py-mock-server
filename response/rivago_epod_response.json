@@ -1,0 +1,47 @@
+{
+  "statusCode": 200,
+  "status": "SUCCESS",
+  "payload": {
+    "cnotesList": [
+      "1003624072"
+    ],
+    "individualTrackingList": [
+      {
+        "cnote": "1003624072",
+        "status": "DELIVERED",
+        "downloads": {
+          "barcodesPrint": {
+            "downloadUrl": "https://s3-ap-southeast-1.amazonaws.com/rivigo-zoom-prod/rivigo-zoom-prod/5687712/BARCODE_PRINT/1003624072/BarcodePrint-1003624072.pdf"
+          },
+          "cnotePrint": {
+            "downloadUrl": "https://s3-ap-southeast-1.amazonaws.com/rivigo-zoom-prod/rivigo-zoom-prod/5687712/CNOTE_PRINT/1003624072/CnotePrint-1003624072.pdf"
+          },
+          "invoice": {
+            "downloadError": true,
+            "downloadErrorMessage": "INVOICE is currently not available for download"
+          },
+          "proofOfDelivery": {
+            "downloadUrl": "https://s3-ap-southeast-1.amazonaws.com/rivigo-zoom-prod/rivigo-zoom-prod/5687712/POD/1003624072.jpg/1003624072.jpg"
+          }
+        },
+        "transitHistory": [
+          {
+            "transitLocation": "Mahadevapura",
+            "activityAtLocation": "Pickup",
+            "dateAndTime": "09/11/2019 18:45:24"
+          },
+           {
+            "transitLocation": "Chhatarpur",
+            "activityAtLocation": "Delivered",
+            "dateAndTime": "13/11/2019 13:02:26"
+          }
+        ],
+        "delivered": true,
+        "isRto": false,
+        "expectedDateOfDelivery": "2019-11-13T12:30:00.000Z",
+        "actualDateOfDelivery": "2019-11-13T07:32:26.603Z",
+        "clientPromisedDate": "2019-11-13T12:30:00.000Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1615195907.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"data"
+	],
+	"properties": {
+		"data": {
+			"$id": "#root/data",
+			"title": "Data",
+			"type": "object",
+			"required": [
+				"from_date",
+				"to_date",
+				"indents"
+			],
+			"properties": {
+				"from_date": {
+					"$id": "#root/data/from_date",
+					"title": "From_date",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"to_date": {
+					"$id": "#root/data/to_date",
+					"title": "To_date",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"indents": {
+					"$id": "#root/data/indents",
+					"title": "Indents",
+					"type": "array",
+					"default": [],
+					"items":{
+						"$id": "#root/data/indents/items",
+						"title": "Items",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+		}
+
+	}
+}

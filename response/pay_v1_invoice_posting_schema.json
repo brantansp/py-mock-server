@@ -1,0 +1,211 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1611065235.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"data"
+	],
+	"properties": {
+		"data": {
+			"$id": "#root/data",
+			"title": "Data",
+			"type": "object",
+			"required": [
+				"transporter_code",
+				"invoice_number",
+				"invoice_total",
+				"invoice_date",
+				"tax_code",
+				"tax_type",
+				"tax_percentage",
+				"note_type",
+				"note_amount",
+				"indents"
+			],
+			"properties": {
+				"transporter_code": {
+					"$id": "#root/data/transporter_code",
+					"title": "Transporter_code",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"invoice_number": {
+					"$id": "#root/data/invoice_number",
+					"title": "Invoice_number",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"invoice_total": {
+					"$id": "#root/data/invoice_total",
+					"title": "Invoice_total",
+					"type": "integer",
+					"default": 0
+				},
+				"invoice_date": {
+					"$id": "#root/data/invoice_date",
+					"title": "Invoice_date",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"tax_code": {
+					"$id": "#root/data/tax_code",
+					"title": "Tax_code",
+					"type": "integer",
+					"default": 0
+				},
+				"tax_type": {
+					"$id": "#root/data/tax_type",
+					"title": "Tax_type",
+					"type": "integer",
+					"default": 0
+				},
+				"tax_percentage": {
+					"$id": "#root/data/tax_percentage",
+					"title": "Tax_percentage",
+					"type": "integer",
+					"default": 0
+				},
+				"note_type": {
+					"$id": "#root/data/note_type",
+					"title": "Note_type",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"note_amount": {
+					"$id": "#root/data/note_amount",
+					"title": "Note_amount",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"indents": {
+					"$id": "#root/data/indents",
+					"title": "Indents",
+					"type": "array",
+					"default": [],
+					"items":{
+						"$id": "#root/data/indents/items",
+						"title": "Items",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/data/indents/items/items",
+							"title": "Items",
+							"type": "object",
+							"required": [
+								"indent_id",
+								"source_code",
+								"destination_code",
+								"sku",
+								"quantity",
+								"quantity_unit",
+								"weight",
+								"weight_unit",
+								"volume",
+								"volume_unit",
+								"invoice_value_freight",
+								"invoice_value_detention",
+								"invoice_value_defect"
+							],
+							"properties": {
+								"indent_id": {
+									"$id": "#root/data/indents/items/items/indent_id",
+									"title": "Indent_id",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"source_code": {
+									"$id": "#root/data/indents/items/items/source_code",
+									"title": "Source_code",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"destination_code": {
+									"$id": "#root/data/indents/items/items/destination_code",
+									"title": "Destination_code",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"sku": {
+									"$id": "#root/data/indents/items/items/sku",
+									"title": "Sku",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"quantity": {
+									"$id": "#root/data/indents/items/items/quantity",
+									"title": "Quantity",
+									"type": "integer",
+									"default": 0
+								},
+								"quantity_unit": {
+									"$id": "#root/data/indents/items/items/quantity_unit",
+									"title": "Quantity_unit",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"weight": {
+									"$id": "#root/data/indents/items/items/weight",
+									"title": "Weight",
+									"type": "integer",
+									"default": 0
+								},
+								"weight_unit": {
+									"$id": "#root/data/indents/items/items/weight_unit",
+									"title": "Weight_unit",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"volume": {
+									"$id": "#root/data/indents/items/items/volume",
+									"title": "Volume",
+									"type": "integer",
+									"default": 0
+								},
+								"volume_unit": {
+									"$id": "#root/data/indents/items/items/volume_unit",
+									"title": "Volume_unit",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"invoice_value_freight": {
+									"$id": "#root/data/indents/items/items/invoice_value_freight",
+									"title": "Invoice_value_freight",
+									"type": "number",
+									"default": 0.0
+								},
+								"invoice_value_detention": {
+									"$id": "#root/data/indents/items/items/invoice_value_detention",
+									"title": "Invoice_value_detention",
+									"type": "number",
+									"default": 0.0
+								},
+								"invoice_value_defect": {
+									"$id": "#root/data/indents/items/items/invoice_value_defect",
+									"title": "Invoice_value_defect",
+									"type": "number",
+									"default": 0.0
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+}

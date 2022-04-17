@@ -1,0 +1,19 @@
+{
+    "Status": "Y",
+    "ErrorRemarks": "Consignment booked Successfully",
+    "UniqueValue": "619cd5df213d410163fd86dd",
+    "CustomerRefNo": null,
+    "ConNo": "721028260",
+    "PickupOrderNo": "TestPickup",
+    "PickupDate": "2021-11-24",
+    "PickupScCode": "DELB",
+    "DeliveryScCode": "BGPF",
+    "TotalPackage": 15,
+    "Pieces": [{
+            "StartNo": "494204948",
+            "EndNo": "494204962"
+        }
+    ],
+    "ErrorCode": null,
+    "Errors": null
+}

@@ -1,0 +1,79 @@
+{
+  "CustReferenceNumber": "*****88",
+  "SPOTONAwbNumber": "703534024",
+  "PickupCity": "Bangalore",
+  "PickupZone": "SOUTH",
+  "DeliveryCity": "Gurgaon",
+  "DeliveryRegion": "NORTH",
+  "DeliveryPincodeServiceType": "STANDARD",
+  "ReceiverName": "Kapil",
+  "DeliveryPincode": 122018,
+  "PickupDate": "28/07/2016",
+  "DeliveryDate": "01/08/2016",
+  "DeliveryDueDate": "02/08/2016",
+  "DeliveredToPerson": "Kapil",
+  "AWBStatus": "Delivered",
+  "CustomerCode": "000117908",
+  "PickupPincode": 560068,
+  "ActualWeight": 30,
+  "ChargedWeight": 30,
+  "NumberOfPieces": 3,
+  "DeclaredValue": 1,
+  "FreightValueExcludingST": "0.00",
+  "ConStatusHistory": [
+    {
+      "StatusDate": "8/1/2016 3:00:00 PM",
+      "StatusLocation": "GTBB-GURGAON, GURGAON",
+      "Status": "Delivered",
+      "StatusRemarks": "Delivered"
+    },
+    {
+      "StatusDate": "8/1/2016 11:17:56 AM",
+      "StatusLocation": "GTBB-GURGAON, GURGAON",
+      "Status": "Out For Delivery",
+      "StatusRemarks": "Out For Delivery"
+    },
+    {
+      "StatusDate": "8/1/2016 6:40:00 AM",
+      "StatusLocation": "GTBB-GURGAON, GURGAON",
+      "Status": "Inscanned",
+      "StatusRemarks": "Inscanned"
+    },
+    {
+      "StatusDate": "8/1/2016 4:47:00 AM",
+      "StatusLocation": "DELH-RALIAWAS HUB, DELHI",
+      "Status": "Outscanned",
+      "StatusRemarks": "Outscanned"
+    },
+    {
+      "StatusDate": "7/31/2016 6:05:00 PM",
+      "StatusLocation": "DELH-RALIAWAS HUB, DELHI",
+      "Status": "Inscanned",
+      "StatusRemarks": "Inscanned"
+    },
+    {
+      "StatusDate": "7/29/2016 2:48:00 AM",
+      "StatusLocation": "BLRH-NEELMANGLA HUB, BENGALURU",
+      "Status": "Outscanned",
+      "StatusRemarks": ""
+    },
+    {
+      "StatusDate": "7/28/2016 10:00:00 PM",
+      "StatusLocation": "BLRH-NEELMANGLA HUB, BENGALURU",
+      "Status": "Inscanned",
+      "StatusRemarks": ""
+    },
+    {
+      "StatusDate": "7/28/2016 8:05:00 PM",
+      "StatusLocation": "BLRT-ELECTRONICS CITY, BENGALURU",
+      "Status": "Outscanned",
+      "StatusRemarks": ""
+    },
+    {
+      "StatusDate": "7/28/2016 12:00:00 PM",
+      "StatusLocation": "BLRT-ELECTRONICS CITY, BENGALURU",
+      "Status": "Booked",
+      "StatusRemarks": ""
+    }
+  ]
+}

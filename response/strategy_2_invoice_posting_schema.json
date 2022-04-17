@@ -1,0 +1,218 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1609149378.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"transporter_code",
+		"invoice_number",
+		"invoice_total",
+		"invoice_date",
+		"tax_code",
+		"tax_type",
+		"tax_percentage",
+		"shipments"
+	],
+	"properties": {
+		"transporter_code": {
+			"$id": "#root/transporter_code",
+			"title": "Transporter_code",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"invoice_number": {
+			"$id": "#root/invoice_number",
+			"title": "Invoice_number",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"invoice_total": {
+			"$id": "#root/invoice_total",
+			"title": "Invoice_total",
+			"type": "number",
+			"default": 0
+		},
+		"invoice_date": {
+			"$id": "#root/invoice_date",
+			"title": "Invoice_date",
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"tax_code": {
+			"$id": "#root/tax_code",
+			"title": "Tax_code",
+			"type": "integer",
+			"default": 0
+		},
+		"tax_type": {
+			"$id": "#root/tax_type",
+			"title": "Tax_type",
+			"type": "integer",
+			"default": 0
+		},
+		"tax_percentage": {
+			"$id": "#root/tax_percentage",
+			"title": "Tax_percentage",
+			"type": "integer",
+			"default": 0
+		},
+		"shipments": {
+			"$id": "#root/shipments",
+			"title": "Shipments",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/shipments/items",
+				"title": "Items",
+				"type": "object",
+				"required": [
+					"shipment_number",
+					"indents"
+				],
+				"properties": {
+					"shipment_number": {
+						"$id": "#root/shipments/items/shipment_number",
+						"title": "Shipment_number",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"indents": {
+						"$id": "#root/shipments/items/indents",
+						"title": "Indents",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/shipments/items/indents/items",
+							"title": "Items",
+							"type": "object",
+							"required": [
+								"indent_id",
+								"movement",
+								"sku",
+								"source",
+								"source_ref_id",
+								"gate_ref_id",
+								"destination",
+								"destination_ref_id",
+								"quantity",
+								"weight",
+								"volume",
+								"invoice_value_freight",
+								"invoice_value_detention",
+								"invoice_value_defect",
+								"consignee_category"
+							],
+							"properties": {
+								"indent_id": {
+									"$id": "#root/shipments/items/indents/items/indent_id",
+									"title": "Indent_id",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"movement": {
+									"$id": "#root/shipments/items/indents/items/movement",
+									"title": "Movement",
+									"type": "integer",
+									"default": 0
+								},
+								"sku": {
+									"$id": "#root/shipments/items/indents/items/sku",
+									"title": "Sku",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"source": {
+									"$id": "#root/shipments/items/indents/items/source",
+									"title": "Source",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"source_ref_id": {
+									"$id": "#root/shipments/items/indents/items/source_ref_id",
+									"title": "Source_ref_id",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"gate_ref_id": {
+									"$id": "#root/shipments/items/indents/items/gate_ref_id",
+									"title": "Gate_ref_id",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"destination": {
+									"$id": "#root/shipments/items/indents/items/destination",
+									"title": "Destination",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"destination_ref_id": {
+									"$id": "#root/shipments/items/indents/items/destination_ref_id",
+									"title": "Destination_ref_id",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								},
+								"quantity": {
+									"$id": "#root/shipments/items/indents/items/quantity",
+									"title": "Quantity",
+									"type": "number",
+									"default": 0
+								},
+								"weight": {
+									"$id": "#root/shipments/items/indents/items/weight",
+									"title": "Weight",
+									"type": "number",
+									"default": 0
+								},
+								"volume": {
+									"$id": "#root/shipments/items/indents/items/volume",
+									"title": "Volume",
+									"type": "number",
+									"default": 0
+								},
+								"invoice_value_freight": {
+									"$id": "#root/shipments/items/indents/items/invoice_value_freight",
+									"title": "Invoice_value_freight",
+									"type": "number",
+									"default": 0
+								},
+								"invoice_value_detention": {
+									"$id": "#root/shipments/items/indents/items/invoice_value_detention",
+									"title": "Invoice_value_detention",
+									"type": "number",
+									"default": 0
+								},
+								"invoice_value_defect": {
+									"$id": "#root/shipments/items/indents/items/invoice_value_defect",
+									"title": "Invoice_value_defect",
+									"type": "number",
+									"default": 0
+								},
+								"consignee_category": {
+									"$id": "#root/shipments/items/indents/items/consignee_category",
+									"title": "Consignee_category",
+									"type": "string",
+									"default": "",
+									"pattern": "^.*$"
+								}
+							}
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}

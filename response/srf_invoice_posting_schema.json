@@ -1,0 +1,261 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1615979211.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"get_freight_invoice_dtl"
+	],
+	"properties": {
+		"get_freight_invoice_dtl": {
+			"$id": "#root/get_freight_invoice_dtl",
+			"title": "Get_freight_invoice_dtl",
+			"type": "object",
+			"required": [
+				"@xmlns",
+				"RESTHeader",
+				"InputParameters"
+			],
+			"properties": {
+				"@xmlns": {
+					"$id": "#root/get_freight_invoice_dtl/@xmlns",
+					"title": "@xmlns",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"RESTHeader": {
+					"$id": "#root/get_freight_invoice_dtl/RESTHeader",
+					"title": "Restheader",
+					"type": "object",
+					"required": [
+						"xmlns",
+						"Responsibility",
+						"RespApplication",
+						"SecurityGroup",
+						"NLSLanguage",
+						"Org_Id"
+					],
+					"properties": {
+						"xmlns": {
+							"$id": "#root/get_freight_invoice_dtl/RESTHeader/xmlns",
+							"title": "Xmlns",
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						},
+						"Responsibility": {
+							"$id": "#root/get_freight_invoice_dtl/RESTHeader/Responsibility",
+							"title": "Responsibility",
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						},
+						"RespApplication": {
+							"$id": "#root/get_freight_invoice_dtl/RESTHeader/RespApplication",
+							"title": "Respapplication",
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						},
+						"SecurityGroup": {
+							"$id": "#root/get_freight_invoice_dtl/RESTHeader/SecurityGroup",
+							"title": "Securitygroup",
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						},
+						"NLSLanguage": {
+							"$id": "#root/get_freight_invoice_dtl/RESTHeader/NLSLanguage",
+							"title": "Nlslanguage",
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						},
+						"Org_Id": {
+							"$id": "#root/get_freight_invoice_dtl/RESTHeader/Org_Id",
+							"title": "Org_id",
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						}
+					}
+				}
+,
+				"InputParameters": {
+					"$id": "#root/get_freight_invoice_dtl/InputParameters",
+					"title": "Inputparameters",
+					"type": "object",
+					"required": [
+						"P_FREIGHT_DETAILS_TBL"
+					],
+					"properties": {
+						"P_FREIGHT_DETAILS_TBL": {
+							"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL",
+							"title": "P_freight_details_tbl",
+							"type": "object",
+							"required": [
+								"items"
+							],
+							"properties": {
+								"items": {
+									"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items",
+									"title": "Items",
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items",
+										"title": "Items",
+										"type": "object",
+										"required": [
+											"TRANSPORTER_CODE",
+											"INVOICE_NUMBER",
+											"INVOICE_TOTAL",
+											"INVOICE_DATE",
+											"TAX_CODE",
+											"TAX_TYPE",
+											"TAX_PERCENTAGE",
+											"NOTE_TYPE",
+											"NOTE_AMOUNT",
+											"INDENT_ID",
+											"SKU",
+											"SOURCE_CODE",
+											"DESTINATION_CODE",
+											"QUANTITY",
+											"WEIGHT",
+											"INVOICE_VALUE_FREIGHT",
+											"INVOICE_VALUE_DETENTION",
+											"INVOICE_VALUE_DEFECT"
+										],
+										"properties": {
+											"TRANSPORTER_CODE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/TRANSPORTER_CODE",
+												"title": "Transporter_code",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"INVOICE_NUMBER": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/INVOICE_NUMBER",
+												"title": "Invoice_number",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"INVOICE_TOTAL": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/INVOICE_TOTAL",
+												"title": "Invoice_total",
+												"type": "number",
+												"default": 0.0
+											},
+											"INVOICE_DATE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/INVOICE_DATE",
+												"title": "Invoice_date",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"TAX_CODE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/TAX_CODE",
+												"title": "Tax_code",
+												"type": "integer",
+												"default": 0
+											},
+											"TAX_TYPE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/TAX_TYPE",
+												"title": "Tax_type",
+												"type": "integer",
+												"default": 0
+											},
+											"TAX_PERCENTAGE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/TAX_PERCENTAGE",
+												"title": "Tax_percentage",
+												"type": "integer",
+												"default": 0
+											},
+											"NOTE_TYPE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/NOTE_TYPE",
+												"title": "Note_type",
+												"type": "null",
+												"default": null
+											},
+											"NOTE_AMOUNT": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/NOTE_AMOUNT",
+												"title": "Note_amount",
+												"type": "null",
+												"default": null
+											},
+											"INDENT_ID": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/INDENT_ID",
+												"title": "Indent_id",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"SKU": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/SKU",
+												"title": "Sku",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"SOURCE_CODE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/SOURCE_CODE",
+												"title": "Source_code",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"DESTINATION_CODE": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/DESTINATION_CODE",
+												"title": "Destination_code",
+												"type": "string",
+												"default": "",
+												"pattern": "^.*$"
+											},
+											"QUANTITY": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/QUANTITY",
+												"title": "Quantity",
+												"type": "integer",
+												"default": 0
+											},
+											"WEIGHT": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/WEIGHT",
+												"title": "Weight",
+												"type": "number",
+												"default": 0
+											},
+											"INVOICE_VALUE_FREIGHT": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/INVOICE_VALUE_FREIGHT",
+												"title": "Invoice_value_freight",
+												"type": "number",
+												"default": 0
+											},
+											"INVOICE_VALUE_DETENTION": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/INVOICE_VALUE_DETENTION",
+												"title": "Invoice_value_detention",
+												"type": "number",
+												"default": 0
+											},
+											"INVOICE_VALUE_DEFECT": {
+												"$id": "#root/get_freight_invoice_dtl/InputParameters/P_FREIGHT_DETAILS_TBL/items/items/INVOICE_VALUE_DEFECT",
+												"title": "Invoice_value_defect",
+												"type": "number",
+												"default": 0
+											}
+										}
+									}
+
+								}
+							}
+						}
+
+					}
+				}
+
+			}
+		}
+
+	}
+}

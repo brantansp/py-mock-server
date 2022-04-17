@@ -1,0 +1,125 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1622054169.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"movement_type",
+		"transporter_code",
+		"indent_number",
+		"total_indent_value",
+		"material"
+	],
+	"properties": {
+		"movement_type": {
+			"$id": "#root/movement_type",
+			"title": "Movement_type",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"1"
+			],
+			"pattern": "^.*$"
+		},
+		"transporter_code": {
+			"$id": "#root/transporter_code",
+			"title": "Transporter_code",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"tr20210526235053"
+			],
+			"pattern": "^.*$"
+		},
+		"indent_number": {
+			"$id": "#root/indent_number",
+			"title": "Indent_number",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"pg-R20210526235053-D-1"
+			],
+			"pattern": "^.*$"
+		},
+		"total_indent_value": {
+			"$id": "#root/total_indent_value",
+			"title": "Total_indent_value",
+			"type": "integer",
+			"examples": [
+				3082612
+			],
+			"default": 0
+		},
+		"material": {
+			"$id": "#root/material",
+			"title": "Material",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/material/items",
+				"title": "Items",
+				"type": "object",
+				"required": [
+					"material_invoice_number",
+					"material_code",
+					"consignee_code",
+					"total_freight_provision",
+					"line_item_number"
+				],
+				"properties": {
+					"material_invoice_number": {
+						"$id": "#root/material/items/material_invoice_number",
+						"title": "Material_invoice_number",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"INV120210526235053"
+						],
+						"pattern": "^.*$"
+					},
+					"material_code": {
+						"$id": "#root/material/items/material_code",
+						"title": "Material_code",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"mc20210526235053"
+						],
+						"pattern": "^.*$"
+					},
+					"consignee_code": {
+						"$id": "#root/material/items/consignee_code",
+						"title": "Consignee_code",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"cr120210526235053"
+						],
+						"pattern": "^.*$"
+					},
+					"total_freight_provision": {
+						"$id": "#root/material/items/total_freight_provision",
+						"title": "Total_freight_provision",
+						"type": "integer",
+						"examples": [
+							3072512
+						],
+						"default": 0
+					},
+					"line_item_number": {
+						"$id": "#root/material/items/line_item_number",
+						"title": "Line_item_number",
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		}
+	}
+}

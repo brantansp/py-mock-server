@@ -1,0 +1,40 @@
+{
+  "bookingId": "90465",
+  "consignment_history": [
+ {
+      "location": "Cochin",
+      "activity": "Pickup",
+      "remarks": "",
+      "date_time": "06/06/2020 11:24:59"
+    },
+    {
+      "location": "Cochin",
+      "activity": "Branch - IN",
+      "remarks": "",
+      "date_time": "11/06/2020 11:50:30"
+    },
+    {
+      "location": "Cochin",
+      "activity": "Waiting at hub",
+      "remarks": "",
+      "date_time": "11/06/2020 12:12:49"
+    },
+    {
+      "location": "Cochin",
+      "activity": "DISPATCH",
+      "remarks": "Mock Delivered",
+      "date_time": "03/10/2022 01:05:10"
+    },
+    {
+      "location": "Cochin",
+      "activity": "Delivered",
+      "remarks": "Mock Delivered",
+      "date_time": "02/02/2022 01:05:10"
+    }
+   
+  ],
+  "expected_delivery_date": "2020-06-15T05:30:02.016Z",
+  "statusCode": 200,
+  "errorMessage": null,
+  "consignment_status": "Delivered"
+}
